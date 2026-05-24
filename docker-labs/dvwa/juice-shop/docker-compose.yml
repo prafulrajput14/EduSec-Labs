@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  juice-shop:
+    image: bkimminich/juice-shop
+    ports:
+      - "8083:3000"
+    environment:
+      - NODE_ENV=development
+    networks:
+      - edusec-net
+
+networks:
+  edusec-net:
+    driver: bridge

@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: edusec-backend
+    env: node
+    region: oregon
+    plan: free
+    repo: https://github.com/prafulrajput14/EduSec-Labs.git
+    branch: main
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
+    envVars:
+      - key: MONGODB_URI
+        value: REPLACE_WITH_YOUR_CONNECTION_STRING
+      - key: JWT_SECRET
+        value: REPLACE_WITH_A_SECURE_RANDOM_STRING

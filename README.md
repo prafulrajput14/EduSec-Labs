@@ -1,141 +1,271 @@
-# EduSec Labs
+# 🔐 EduSec Labs — Secure Learning Platform for Web Security & Cybersecurity Concepts
 
-EduSec Labs is a comprehensive cybersecurity education platform designed to provide hands-on experience with ethical hacking and vulnerability testing. It features a modern React frontend, a robust Node.js/Express backend, and integrated virtualized environments using Vagrant (Kali Linux) and Docker (DVWA).
+> A full-stack educational platform focused on secure web development, cybersecurity awareness, authentication systems, and practical implementation of secure coding practices.
 
-## Features
+🌐 **Live Demo:** https://edu-sec-labs.vercel.app/
 
--   **Interactive Dashboard**: A user-friendly interface to manage labs and track progress.
--   **Virtual Labs**:
-    -   **Kali Linux**: Full-fledged Kali Linux environment managed via Vagrant for finding and exploiting vulnerabilities.
-    -   **DVWA (Damn Vulnerable Web App)**: Dockerized vulnerable web application for practicing web attacks.
--   **Terminal Integration**: Web-based terminal (xterm.js) to interact with lab environments directly from the browser.
--   **Progress Tracking**: Track your completion status and scores for different labs.
--   **AI Tutor**: Integrated AI assistant to help guide you through labs and explain concepts.
+📂 **Repository:** https://github.com/prafulrajput14/EduSec-Labs
 
-## Technology Stack
+---
 
-### Frontend
--   **React**: UI library for building the user interface.
--   **Vite**: Next Generation Frontend Tooling.
--   **Bootstrap**: CSS framework for responsive design.
--   **xterm.js**: For embedding a terminal in the browser.
--   **Axios**: For making HTTP requests to the backend.
+# 📌 Overview
 
-### Backend
--   **Node.js & Express**: Server-side runtime and web framework.
--   **MongoDB & Mongoose**: NoSQL database for storing user data, lab info, and progress.
--   **JWT (JSON Web Tokens)**: For secure user authentication.
--   **Docker Integration**: Interacting with Docker containers for labs.
--   **VirtualBox & Vagrant**: Managing the Kali Linux VM.
+EduSec Labs is a full-stack web application designed to demonstrate secure software development practices while providing an interactive educational environment for learning modern web technologies and cybersecurity concepts.
 
-## Prerequisites
+The platform integrates authentication systems, protected routes, secure backend architecture, database management, and security-focused workflows to help users understand real-world web application security principles.
 
-Before setting up the project, ensure you have the following installed:
+Built using the MERN stack, EduSec Labs emphasizes secure coding standards, scalable architecture, and responsive user experience.
 
--   **Node.js** (v18 or higher)
--   **npm** (Node Package Manager)
--   **MongoDB** (running locally or a cloud URI)
--   **Docker Desktop** (for containerized labs like DVWA)
--   **VirtualBox** (for Kali Linux VM)
--   **Vagrant** (for managing the Kali VM)
+---
 
-## Installation & Setup
+# ✨ Features
 
-### 1. Clone the Repository
+## 🔐 Secure Authentication System
 
-```bash
-git clone https://github.com/yourusername/edusec-labs.git
-cd edusec-labs
+* JWT-Based Authentication
+* User Registration & Login
+* Protected Routes
+* Secure Session Management
+* Authentication Middleware
+
+## 🛡️ Security-Focused Architecture
+
+* Secure API Design
+* Input Validation
+* Authentication Authorization Workflow
+* Protected Backend Endpoints
+* Role-Based Access Control Structure
+
+## 📚 Educational Learning Environment
+
+* Cybersecurity-Oriented Platform
+* Secure Development Concepts
+* Interactive Learning Workflow
+* Real-World Security Practices
+
+## ⚡ Backend Security Integration
+
+* Express Middleware Protection
+* Secure Request Handling
+* MongoDB Data Validation
+* Token-Based Authorization
+
+## 🎨 Modern User Interface
+
+* Responsive Design
+* Mobile-Friendly Experience
+* Clean Dashboard Layout
+* Professional SaaS-Style UI
+
+---
+
+# 🛠️ Tech Stack
+
+## Frontend
+
+* React.js
+* Vite
+* Tailwind CSS
+* JavaScript (ES6+)
+* Axios
+
+## Backend
+
+* Node.js
+* Express.js
+
+## Database
+
+* MongoDB Atlas
+* Mongoose
+
+## Authentication & Security
+
+* JWT Authentication
+* Password Hashing
+* Protected API Routes
+* Authorization Middleware
+
+## Deployment
+
+* Vercel
+* Render
+* MongoDB Atlas
+
+---
+
+# 🏗️ Project Architecture
+
+```text
+EduSec-Labs
+│
+├── frontend
+│   ├── components
+│   ├── pages
+│   ├── services
+│   ├── hooks
+│   └── assets
+│
+├── backend
+│   ├── controllers
+│   ├── routes
+│   ├── middleware
+│   ├── models
+│   ├── config
+│   └── services
+│
+└── README.md
 ```
 
-### 2. Backend Setup
+---
 
-Navigate to the backend directory:
+# 🚀 System Workflow
 
-```bash
-cd backend
+```text
+User Registration/Login
+            │
+            ▼
+JWT Authentication
+            │
+            ▼
+Authorization Middleware
+            │
+            ▼
+Protected Backend APIs
+            │
+            ▼
+Database Operations
+            │
+            ▼
+Secure User Access
+            │
+            ▼
+Interactive Learning Dashboard
 ```
 
-Install dependencies:
+---
+
+# 🚀 Installation
+
+## Clone Repository
+
+```bash
+git clone https://github.com/prafulrajput14/EduSec-Labs.git
+```
+
+## Navigate to Project Directory
+
+```bash
+cd EduSec-Labs
+```
+
+## Install Dependencies
 
 ```bash
 npm install
 ```
 
-Create a `.env` file in the `backend` directory with the following variables:
-
-```env
-PORT=5000
-MONGODB_URI=mongodb://localhost:27017/edusec-labs
-JWT_SECRET=your_jwt_secret_key
-# OPENAI_API_KEY=your_openai_key # Optional for AI Tutor
-```
-
-Initialize the database with default labs:
-
-```bash
-npm run init-labs
-```
-
-Start the backend server:
+## Run Frontend
 
 ```bash
 npm run dev
 ```
 
-The backend will run on `http://localhost:5000`.
-
-### 3. Frontend Setup
-
-Open a new terminal and navigate to the frontend directory:
+## Run Backend
 
 ```bash
-cd frontend
+npm start
 ```
 
-Install dependencies:
+---
 
-```bash
-npm install
-```
+# 🎯 Key Highlights
 
-Start the development server:
+* Security-Focused Full-Stack Web Application
+* JWT Authentication & Authorization
+* Protected API Architecture
+* MongoDB Database Integration
+* Secure Backend Development Practices
+* Responsive SaaS Dashboard Interface
+* RESTful API Design
+* MERN Stack Implementation
+* Cloud Deployment Ready
 
-```bash
-npm run dev
-```
+---
 
-The frontend will run on `http://localhost:5173` (or the port shown in your terminal).
+# 🛡️ Security Concepts Demonstrated
 
-### 4. Lab Environment Setup
+* Authentication & Authorization
+* Secure Session Handling
+* Password Protection Techniques
+* Input Validation Strategies
+* API Security Principles
+* Protected Route Implementation
+* Secure Database Interaction
+* Backend Middleware Protection
 
-#### Docker Labs (DVWA)
-Ensure Docker Desktop is running. The backend will automatically manage the lifecycle of Docker containers when you start a lab from the dashboard.
+---
 
-#### Kali Linux VM
-Navigate to the vagrant directory:
+# 📚 Learning Outcomes
 
-```bash
-cd vagrant
-```
+This project strengthened practical understanding of:
 
-Start the Kali Linux VM (this may take a while to download the box for the first time):
+* Secure Web Application Development
+* Authentication & Authorization Workflows
+* REST API Security
+* MongoDB Data Modeling
+* Backend Architecture Design
+* MERN Stack Development
+* Secure Coding Practices
+* Cloud Deployment Workflows
+* Cybersecurity Fundamentals
 
-```bash
-vagrant up
-```
+---
 
-Once running, you can access the Kali machine via SSH or through the web terminal if configured.
+# 👨‍💻 Developer
 
-## Usage
+## Praful Kumar
 
-1.  Open your browser and navigate to the frontend URL (e.g., `http://localhost:5173`).
-2.  Register a new account or log in.
-3.  Browse the available labs on the dashboard.
-4.  Click "Start Lab" to spin up the environment (e.g., DVWA).
-5.  Use the provided access details to interact with the vulnerable target.
-6.  Use the AI Assistant if you get stuck or need a hint.
+Final Year Computer Science Engineering Student at GLA University, Mathura.
 
-## License
+### Areas of Interest
 
-This project is licensed under the MIT License.
+* Full-Stack Development
+* Software Engineering
+* Cybersecurity
+* Artificial Intelligence Applications
+* Backend Development
+* Scalable Web Systems
+* Problem Solving & DSA
+
+---
+
+# 🌐 Connect With Me
+
+### Portfolio
+
+https://prafulrajput14.github.io/My-Portfolio/
+
+### LinkedIn
+
+https://www.linkedin.com/in/praful-kumar1401/
+
+### GitHub
+
+https://github.com/prafulrajput14
+
+### LeetCode
+
+https://leetcode.com/u/prafulrajput_14/
+
+### Email
+
+[prafulkumar1401@gmail.com](mailto:prafulkumar1401@gmail.com)
+
+---
+
+# ⭐ Support
+
+If you found this project useful, please consider giving the repository a star.
+
+A ⭐ helps increase project visibility and supports future development.
